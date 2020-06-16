@@ -1,20 +1,17 @@
 
 
+//===========задание 1=========///
+let name , price;
+name =  'Генератор защитного поля';
+price = '1000';
 
-'user strict'
-
-// ///===========задание 1=========///
-// let name , price;
-// name =  'Генератор защитного поля';
-// price = '1000';
-
-// // const message = `Выбран  ${name}, цена за штуку ${price} кредитов.`;
-// //  console.log(message);
- 
- 
-// price = '2000';
 // const message = `Выбран  ${name}, цена за штуку ${price} кредитов.`;
-// console.log(message);
+//  console.log(message);
+ 
+ 
+price = '2000';
+const message = `Выбран  ${name}, цена за штуку ${price} кредитов.`;
+console.log(message);
 
 
 ///===========задание 2=========///
@@ -86,48 +83,70 @@
 
     ///===========задание 5=========///
 
-    let cost;
-    
-    
-    const country = prompt(`Страна`);
-    if (country === null){
-        console.log(`Вы отменили заказ`);
-        break;
-    
-    }
+//    let cost;
 
-    const countryInput = country.toLowerCase();
-    
+//     const country = prompt(`Страна`);
+//     if (country !== null){
 
-    switch (countryInput){
-     case 'китай':
-         cost = 100;
-        break;
+//         switch (country.toLowerCase()){
+//             case 'китай':
+//                 cost = 100;
+//                 console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+//                break;
+       
+//                case 'чили':
+//                cost = 250;
+//                console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+//                break;
+       
+//                case 'австралия':
+//                cost = 170;
+//                console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+//               break;
+       
+//                case 'индия':
+//                cost = 80;
+//                console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+//                break;
+       
+//                case 'ямайка':
+//                cost = 120;
+//                console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+//                break;
 
-        case 'чили':
-        cost = 250;
-        break;
+//                case '':
+//                console.log(`Вы не ввели название страны`);
+//                break;
 
-        case 'австралия':
-        cost = 170;
-       break;
+//          default:
+//           console.log(`В вашей стране доставка не доступна`);
 
-        case 'индия':
-        cost = 80;
-        break;
-
-        case 'ямайка':
-        cost = 120;
-        break;
+//     } 
+        
+//  } else { 
+//          console.log(`Вы отменили заказ`);
+//     }
         
 
-      default:
-          alert(`В вашей стране доставка не доступна`);
+  ///===========задание 6 =========///
+//    let input , total;
+//    total = 0;
+   
+   
+//    do {
+//       input = prompt(`Please enter a number`);
 
- }
- if (country === null){
-        console.log(`Вы отменилии заказ`);
-    }
+//       if (isNaN(input)){
+//         alert (`Было введено не число, попробуйте еще раз.`);
+//         continue;
 
-    console.log(`Доставка в ${countryInput} будет стоить ${cost} кредитов`);
-    
+//       } else 
+
+//       total += Number(input); 
+//     }
+//    while (input !== null);
+
+//     alert(`Общая сумма чисел чисел равна ${total}`);
+
+
+   
