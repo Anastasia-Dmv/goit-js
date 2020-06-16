@@ -61,25 +61,25 @@ console.log(message);
  ///===========задание 4=========///
 
 
-// const credits = 23580;
-// const pricePerDroid = 3000;
-// const quantity = prompt(`How many Droids you want to buy?`);
-// const totalPrice = quantity * pricePerDroid;
-// const restOfMoney = credits - totalPrice;
+const credits = 23580;
+const pricePerDroid = 3000;
+const quantity = prompt(`How many Droids you want to buy?`);
+const totalPrice = Number(quantity) * pricePerDroid;
+const restOfMoney = credits - totalPrice;
 
-// if (quantity  === null || Number(quantity) === 0 ) {
-//     console.log(`Отменено пользователем!`)
-// }
-// else if ( Number(quantity) < 0) {
-//     alert(`Значение не может быть отрицательным.`)
-// }
+if (quantity  === null || Number(quantity) === 0 ) {
+    console.log(`Отменено пользователем!`)
+}
+else if ( Number(quantity) < 0) {
+    alert(`Значение не может быть отрицательным.`)
+}
 
-//  else if (totalPrice > credits){
-//     console.log(`Недостаточно средств на счету!`)
-// }
-//  else {
-//      console.log(`Вы купили ${quantity } дроидов, на счету осталось ${restOfMoney}  кредитов.`)
-//     }
+ else if (totalPrice > credits){
+    console.log(`Недостаточно средств на счету!`)
+}
+ else {
+     console.log(`Вы купили ${quantity } дроидов, на счету осталось ${restOfMoney}  кредитов.`)
+    }
 
     ///===========задание 5=========///
 
