@@ -46,18 +46,19 @@
 //     word = dividedString[0];
 //     console.log(word);
 
-//     numberOfLetter = word.length;
-//     console.log(numberOfLetter);
+//     // numberOfLetter = word.length;
+//     // console.log(numberOfLetter);
 
-//       let longestWord = numberOfLetter ;
+//       let longestWord = ` `;
+//       console.log(longestWord);
 
 //       for (let i = 0; i < dividedString.length; i += 1){
 
 //          console.log(`items[i],`, dividedString[i].length);
-//           console.log(`longest word, `,longestWord);
+//          console.log(`longest word, `, longestWord.length);
 
-//          if (dividedString[i].length > longestWord){
-//              longestWord = dividedString[i].length;
+//          if (dividedString[i].length < longestWord.length ){
+//              longestWord = word;
 //          }
 //    }
 //    return longestWord ;
@@ -66,50 +67,84 @@
 // }
 
 
-// console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
+//  console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
 
-// findLongestWord('Google do a roll'); // 'Google'
+//  findLongestWord('Google do a roll'); // 'Google'
 
 // findLongestWord('May the force be with you'); // 'force'
 
 //===========задание 4=========///
- let stringLength, string;
+//  let  string;
 
-const formatString = function(string) {
-    console.log(string.length);
-     for ()
-    if ( srting.length <= 40){
-
-        console.log(string);
-    }
-    else if ( srting.length > 40) {
-         stringNew = string.splice(0, 40, `...`);
-         console.log(stringNew);
-    }
-
-
+// const formatString = function(string) {
+//     console.log(string.length);
     
+//     if ( string.length <= 40){
 
-}   
-formatString('Curabitur ligula sapien, tincidunt non.');
-// вернется оригинальная строка
+//         return string
+//     }
+//     else if( string.length > 40) {
+        
+//          const result = string.slice(0, 40) + `...`
+//          return   result ;
+//     }
+//  }  
+// console.log( formatString('Curabitur ligula sapien, tincidunt non.'));
+// console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+// console.log(formatString('Curabitur ligula sapien.'));
+// console.log(
+//  formatString(
+//    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+//    ),
+//  ); 
 
-console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-// вернется форматированная строка
-
-console.log(formatString('Curabitur ligula sapien.'));
-// вернется оригинальная строка
-
-console.log(
-  formatString(
-    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-  ),
-); 
-
-
-
-
+ //===========задание 5=========///
+// const  checkForSpam = function(message){
   
 
+//    if (message.toLowerCase().includes(`spam`) || message.toLowerCase().includes(`sale`)) {
+//    return true;
+//   } else {
+//     return false;
+//   }
+   
 
+
+// }
+// console.log(checkForSpam('Latest technology news')); // false
+// console.log(checkForSpam('JavaScript weekly newsletter')); // false
+// console.log(checkForSpam('Get best sale offers now!')); // true
+// console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+
+//===========задание 6=========///
+let  input, num;
+const numbers =[];
+let total = 0;
+
+
+do {
+  input = prompt (`Enter number`);
+  num = Number(input);
+  numbers.push(Number(num));
+
+  if(input === null){
+    numbers.pop();
+    console.log(numbers);
+  }
+
+} while (input !==null); 
+
+console.log(numbers);
+
+
+
+const getResult = function (){
+  
+    for (const number of numbers){
+      total += number ;
+    }
+    console.log(`total, `, total);
+} ;
+
+getResult(numbers);
 
