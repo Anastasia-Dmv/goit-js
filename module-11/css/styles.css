@@ -1,0 +1,32 @@
+body{ 
+  text-align: center; 
+  background: #f5f8fa; 
+font-family: sans-serif; 
+font-weight: 100; 
+} 
+
+.timer{ 
+  font-family: sans-serif; 
+  color: #fff; 
+  display: inline-block; 
+  font-weight: 100; 
+  text-align: center; 
+  font-size: 10px; 
+} 
+.timer > div{ 
+  padding: 5px; 
+  border-radius: 3px; 
+  background: #00BF96; 
+  display: inline-block; 
+} 
+.timer div > span{ 
+  padding: 5px; 
+  border-radius: 3px; 
+  background: #00816A; 
+  display: inline-block; 
+} 
+.label{ 
+  padding-top: 5px; 
+  font-size: 10px; 
+} 
+  
